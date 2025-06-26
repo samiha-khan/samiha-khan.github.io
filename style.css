@@ -1,34 +1,58 @@
+/* Base */
 body {
   margin: 0;
   font-family: 'Fira Code', monospace;
-  background: #0e0e0e;
+  background-color: #0e0e0e;
   color: #f5f5f5;
+  line-height: 1.6;
 }
 
+/* Container */
 .container {
   max-width: 800px;
-  margin: auto;
+  margin: 0 auto;
   padding: 40px 20px;
 }
 
+/* Header */
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
 h1 {
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   color: #00ffd0;
   margin-bottom: 0.2em;
 }
 
 .tagline {
   color: #aaa;
-  margin-bottom: 2em;
+  font-size: 1rem;
+  margin-top: 0;
 }
 
+/* Headings */
 h2 {
   color: #00ffd0;
-  margin-top: 2em;
   border-bottom: 1px solid #333;
-  padding-bottom: 5px;
+  padding-bottom: 4px;
+  margin-top: 2em;
 }
 
+/* Links */
+a {
+  color: #00ffd0;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+/* Lists */
 ul {
   list-style: none;
   padding: 0;
@@ -36,10 +60,10 @@ ul {
 
 ul li {
   background-color: #1a1a1a;
-  margin-bottom: 15px;
   padding: 12px;
   border-radius: 6px;
-  transition: background-color 0.3s, transform 0.2s;
+  margin-bottom: 12px;
+  transition: background-color 0.2s ease, transform 0.2s ease;
 }
 
 ul li:hover {
@@ -47,27 +71,32 @@ ul li:hover {
   transform: translateY(-2px);
 }
 
-a {
-  color: #00ffd0;
-  text-decoration: none;
+/* Paragraphs */
+section p {
+  margin-bottom: 1em;
 }
 
-a:hover {
-  text-decoration: underline;
-  color: #ffffff;
-}
-
+/* Footer */
 footer {
-  margin-top: 60px;
-  font-size: 0.9rem;
   text-align: center;
+  font-size: 0.9rem;
   color: #777;
   border-top: 1px solid #333;
   padding-top: 20px;
+  margin-top: 60px;
 }
 
+/* Responsive */
 @media (max-width: 600px) {
   h1 {
     font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  .container {
+    padding: 30px 15px;
   }
 }
